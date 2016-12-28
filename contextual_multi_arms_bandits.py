@@ -7,7 +7,7 @@ class Arm:
     def __init__(self, feature_dim, content_id, alpha=0.01):
         self.content_id = content_id
         self.alpha = alpha  # regularization parameter
-        self.norm_mean = np.zeros((1, feature_dim))  # b
+        self.norm_mean = np.zeros((1, feature_dim))
         # Covariance matrix:
         # Store diagonal components only to increase memory efficiency
         self.cov_matrix = np.ones((1, feature_dim))
